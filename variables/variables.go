@@ -27,3 +27,29 @@ func main() {
 	j = strconv.Itoa(i) // go won't risk losing information. need an explicit conversion of variable type
 	fmt.Printf("%v, %T\n", j, j)
 }
+
+// Variables
+
+// - Variable declaration:
+// var foo int
+// var foo int = 42
+// foo:=42
+
+// - Can't reduce variables, but can shadow them
+
+// - All variables must be used
+
+// - Visibility:
+// Lower case first letter for package scope
+// Upper case first letter to export
+// No private scope
+
+// - Naming conventions:
+// Pascal or cameCase
+// 	Capitalize acronyms (HTTP, URL)
+// As short as reasonable
+// 	Longer names for longer lives (more uses)
+
+// - Type conversions:
+// DestinationType(variable)
+// use strconv package for strings
