@@ -61,6 +61,7 @@ func main() {
 // Zero value is false
 
 // - Numeric types:
+
 // -- Integers --
 // * Signed Integers
 // 	*-int type has varying size, but min 32 bits
@@ -73,6 +74,7 @@ func main() {
 // 	*-And, or, xor, and not
 // * Zero value is 0
 // * Can't mix types in same family! (uint16+uint32=error)
+
 // -- Floating point numbers --
 // * Follow IEEE-754 standard
 // * Zero value is 0
@@ -83,6 +85,7 @@ func main() {
 // 	*-Mixed(13.7e12)
 // * Arithmetic operations
 //	*-Addition, subtraction, multiplication, division
+
 // -- Complex Numbers --
 // * Zero value is (0+0i)
 // * 64 and 128 bit versions
@@ -92,3 +95,15 @@ func main() {
 // 	*-imag - get imaginary part as float
 // * Arithmetic operations
 // 	*-Addition, subtraction, multiplication, division
+
+// -- Text types --
+// * Strings
+// 	*-UTF-8
+// 	*-Immutable
+// 	*-Can be concatenated with plus (+) operator
+// 	*-Can be converted to []byte
+// * Rune
+// 	*-UTF-32
+// 	*-Alis for int32
+// 	*-Special methods normally required to process
+// 		** eg strings.Reader#ReadRune
