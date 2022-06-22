@@ -30,16 +30,16 @@ func main() {
 
 // Variables
 
-// - Variable declaration:
+// -- Variable declaration --
 // var foo int
 // var foo int = 42
 // foo:=42
 
-// - Can't reduce variables, but can shadow them
+// -- Can't reduce variables, but can shadow them --
 
-// - All variables must be used
+// -- All variables must be used --
 
-// - Visibility:
+//  --Visibility--
 // Lower case first letter for package scope
 // Upper case first letter to export
 // No private scope
